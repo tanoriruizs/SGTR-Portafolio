@@ -136,6 +136,11 @@ h1 {
 .sgtr-logo {
   font-weight: bold;
   font-size: 25px;
+  transition: transform 0.3s ease;
+}
+
+.sgtr-logo:hover{
+    transform: scale(1.1)
 }
 
 .form-control {
