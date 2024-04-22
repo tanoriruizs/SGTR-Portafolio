@@ -1,0 +1,284 @@
+.navbar {
+  padding: 2rem;
+  background-color: transparent;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: #252525;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.seccion {
+  background-color: #252525;
+  color: white;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+}
+
+.seccion-texto {
+  font-size: 1.3rem;
+}
+
+.seccion-exp {
+  color: black;
+}
+
+.sobre-mi {
+  height: 500px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero {
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+}
+
+.hero-img-profile {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.experiencia {
+  padding: 40px;
+}
+
+.boton-fijo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 10px; 
+  right: 10px; 
+  background-color: #00bb2d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 25px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.boton-fijo:hover {
+  transform: scale(1.1);
+  background-color: #009924;
+}
+
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: white;
+  background-color: #252525;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .seccion-texto {
+    width: 355px;
+    font-size: 1rem;
+  }
+}
+
+
+.columna img {
+  width: 200px;
+  margin: 10px;
+}
+
+.sgtr-logo {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.form-control {
+  color: white;
+  background-color: transparent;
+}
+
+
+
+.form-control:focus{
+  background-color: transparent !important;
+  color: white !important;
+  box-shadow: none;
+  border: 1px solid white;
+}
+
+.custom-form:hover{
+  color: white;
+  background-color: transparent !important;
+}
+
+.custom-form:focus button {
+  color: white;
+  background-color: transparent !important;
+}
+
+.custom-form:focus {
+  background-color: transparent !important;
+}
+
+.custom-form ::placeholder {
+  color: white;
+  background-color: transparent;
+}
+
+.custom-form:active{
+  background-color: transparent;
+  color: white;
+}
+
+.custom-form input:-webkit-autofill,
+.custom-form textarea:-webkit-autofill,
+.custom-form select:-webkit-autofill {
+  -webkit-text-fill-color: rgb(0, 0, 0) !important;
+  background-color: transparent !important;
+}
+
+footer{
+  background-color: #252525;
+  color: white;
+  height: 100%;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+.btn-color:focus,
+.btn-color:hover,
+.btn-color:active,
+.btn-color{
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid white;
+}
+
+.btn-color:active{
+  background-color: red;
+}
+
+.btn-color:hover{
+  background-color: rgb(255, 255, 255);
+  color: #252525;
+}
+
+.btn:active{
+  background-color: rgb(255, 255, 255) !important;;
+  color: #252525 !important;;
+
+}
+
+textarea#mensaje {
+  resize: none;
+}
+
+.profile-container {
+  position: relative;
+  display: inline-block; 
+}
+
+.status-indicator {
+  position: absolute;
+  bottom: 32px;
+  right: 38px;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border: 6px solid white;
+  border-radius: 50%;
+}
+
+
+.hero-img-profile {
+  display: block;
+  width: 250px; 
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  border: 5px solid white; 
+}
