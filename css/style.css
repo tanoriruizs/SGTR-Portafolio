@@ -101,7 +101,6 @@ h1 {
 }
 
 
-
 .experiencia-titulo {
   font-size: 25px;
   font-weight: bold;
@@ -126,7 +125,6 @@ h1 {
   border-radius: 50%;
 }
 
-
 @media screen and (max-width: 600px) {
   .seccion-texto {
     width: 355px;
@@ -143,7 +141,7 @@ h1 {
 .sgtr-logo {
   font-weight: bold;
   font-size: 25px;
-  transition: transform 0.1500s ease;
+  transition: transform 0.3s ease;
 }
 
 .sgtr-logo:hover{
@@ -294,4 +292,3 @@ textarea#mensaje {
   position: relative;
   border: 5px solid white; 
 }
-
