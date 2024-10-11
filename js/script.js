@@ -19,4 +19,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
   setInterval(updateStatusIndicator, 60000); 
 });
-

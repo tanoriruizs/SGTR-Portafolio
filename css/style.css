@@ -68,8 +68,72 @@ h1 {
   margin: 20px;
 }
 
+/* __________ L O G O   S L I D E R __________ */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 7));
+  }
+}
+
+.partners-logo-slider {
+  height: 170px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  padding: 16px 0px;
+
+  /* Agregar los gradientes en los lados */
+  &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none; /* No interfieren con la interacción del usuario */
+  }
+  
+  /* Degradado a la izquierda */
+  &::before {
+      left: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
+  
+  /* Degradado a la derecha */
+  &::after {
+      right: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
+
+  .slide-track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+      position: relative;
+  }
+
+  .slide {
+      height: 100px;
+      width: 250px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+  }
+
+  .slide:hover {
+      filter: grayscale(0%);
+  }
+}
+
+
 .experiencia {
-  padding: 40px;
+  padding-top: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 90px;
 }
 
 .boton-fijo {
@@ -79,8 +143,8 @@ h1 {
   width: 60px;
   height: 60px;
   position: fixed;
-  bottom: 10px; 
-  right: 10px; 
+  bottom: 10px;
+  right: 10px;
   background-color: #00bb2d;
   color: #fff;
   padding: 10px 20px;
@@ -97,9 +161,8 @@ h1 {
 
 .boton-fijo:active {
   transform: scale(1);
-  background-color: #018620;;
+  background-color: #018620;
 }
-
 
 .experiencia-titulo {
   font-size: 25px;
@@ -132,7 +195,6 @@ h1 {
   }
 }
 
-
 .columna img {
   width: 200px;
   margin: 10px;
@@ -144,8 +206,8 @@ h1 {
   transition: transform 0.3s ease;
 }
 
-.sgtr-logo:hover{
-    transform: scale(1.1)
+.sgtr-logo:hover {
+  transform: scale(1.1);
 }
 
 .form-control {
@@ -153,16 +215,14 @@ h1 {
   background-color: transparent;
 }
 
-
-
-.form-control:focus{
+.form-control:focus {
   background-color: transparent !important;
   color: white !important;
   box-shadow: none;
   border: 1px solid white;
 }
 
-.custom-form:hover{
+.custom-form:hover {
   color: white;
   background-color: transparent !important;
 }
@@ -181,7 +241,7 @@ h1 {
   background-color: transparent;
 }
 
-.custom-form:active{
+.custom-form:active {
   background-color: transparent;
   color: white;
 }
@@ -193,7 +253,7 @@ h1 {
   background-color: transparent !important;
 }
 
-footer{
+footer {
   background-color: #252525;
   color: white;
   height: 100%;
@@ -241,25 +301,24 @@ footer{
 .btn-color:focus,
 .btn-color:hover,
 .btn-color:active,
-.btn-color{
+.btn-color {
   background-color: transparent;
   color: #ffffff;
   border: 1px solid white;
 }
 
-.btn-color:active{
+.btn-color:active {
   background-color: red;
 }
 
-.btn-color:hover{
+.btn-color:hover {
   background-color: rgb(255, 255, 255);
   color: #252525;
 }
 
-.btn:active{
-  background-color: rgb(255, 255, 255) !important;;
-  color: #252525 !important;;
-
+.btn:active {
+  background-color: rgb(255, 255, 255) !important;
+  color: #252525 !important;
 }
 
 textarea#mensaje {
@@ -268,7 +327,7 @@ textarea#mensaje {
 
 .profile-container {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .status-indicator {
@@ -280,15 +339,15 @@ textarea#mensaje {
   background-color: green;
   border: 6px solid white;
   border-radius: 50%;
+  transition: filter 0.3s ease-in-out;
 }
-
 
 .hero-img-profile {
   display: block;
-  width: 250px; 
+  width: 250px;
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
   position: relative;
-  border: 5px solid white; 
+  border: 5px solid white;
 }
